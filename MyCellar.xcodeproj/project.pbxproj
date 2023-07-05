@@ -16,6 +16,8 @@
 		8DB5B5C02A5608330043E54F /* MyCellarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5BF2A5608330043E54F /* MyCellarTests.swift */; };
 		8DB5B5CA2A5608330043E54F /* MyCellarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5C92A5608330043E54F /* MyCellarUITests.swift */; };
 		8DB5B5CC2A5608330043E54F /* MyCellarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5CB2A5608330043E54F /* MyCellarUITestsLaunchTests.swift */; };
+		8DB5B5DA2A56090C0043E54F /* BottleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5D92A56090C0043E54F /* BottleEntry.swift */; };
+		8DB5B5DF2A561A570043E54F /* Bottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5DE2A561A570043E54F /* Bottles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8DB5B5C52A5608330043E54F /* MyCellarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCellarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB5B5C92A5608330043E54F /* MyCellarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellarUITests.swift; sourceTree = "<group>"; };
 		8DB5B5CB2A5608330043E54F /* MyCellarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8DB5B5D92A56090C0043E54F /* BottleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleEntry.swift; sourceTree = "<group>"; };
+		8DB5B5DE2A561A570043E54F /* Bottles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		8DB5B5A72A5608320043E54F /* MyCellar */ = {
 			isa = PBXGroup;
 			children = (
+				8DB5B5D82A5608DF0043E54F /* Model */,
 				8DB5B5A82A5608320043E54F /* AppDelegate.swift */,
 				8DB5B5AA2A5608320043E54F /* SceneDelegate.swift */,
 				8DB5B5AC2A5608320043E54F /* ViewController.swift */,
@@ -125,6 +130,15 @@
 				8DB5B5CB2A5608330043E54F /* MyCellarUITestsLaunchTests.swift */,
 			);
 			path = MyCellarUITests;
+			sourceTree = "<group>";
+		};
+		8DB5B5D82A5608DF0043E54F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5B5D92A56090C0043E54F /* BottleEntry.swift */,
+				8DB5B5DE2A561A570043E54F /* Bottles.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB5B5DF2A561A570043E54F /* Bottles.swift in Sources */,
+				8DB5B5DA2A56090C0043E54F /* BottleEntry.swift in Sources */,
 				8DB5B5AD2A5608320043E54F /* ViewController.swift in Sources */,
 				8DB5B5A92A5608320043E54F /* AppDelegate.swift in Sources */,
 				8DB5B5AB2A5608320043E54F /* SceneDelegate.swift in Sources */,

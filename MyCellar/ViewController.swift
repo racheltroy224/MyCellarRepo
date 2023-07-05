@@ -9,9 +9,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var subnameTextField: UITextField!
+    @IBOutlet weak var yearTextField: UITextField!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var ratingTextField: UITextField!
+    @IBOutlet weak var purchaseDateTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    
+    let bottle = BottleEntry()
+    
+    @IBAction func generateWineDescription(_ sender: UIButton) {
+        updateBottle()
+        print(bottle)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    func updateBottle() {
+        bottle.name = nameTextField.text ?? ""
+        bottle.subname = subnameTextField.text ?? ""
+        bottle.year = yearTextField.text ?? ""
+        bottle.price = priceTextField.text ?? ""
+        bottle.rating = ratingTextField.text ?? ""
+        bottle.purchaseDate = purchaseDateTextField.text ?? ""
+        bottle.location = locationTextField.text ?? ""
     }
 
 
