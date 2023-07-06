@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var subnameTextField: UITextField!
+    @IBOutlet weak var countryTextField: UITextField!
+    @IBOutlet weak var regionTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var ratingTextField: UITextField!
@@ -32,6 +34,8 @@ class ViewController: UIViewController {
     func updateBottle() {
         bottle.name = nameTextField.text ?? ""
         bottle.subname = subnameTextField.text ?? ""
+        bottle.country = countryTextField.text ?? ""
+        bottle.region = regionTextField.text ?? ""
         bottle.year = yearTextField.text ?? ""
         bottle.price = priceTextField.text ?? ""
         bottle.rating = ratingTextField.text ?? ""

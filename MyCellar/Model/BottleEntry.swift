@@ -11,6 +11,8 @@ import UIKit
 class BottleEntry {
     var name = ""
     var subname = ""
+    var country = ""
+    var region = ""
     var year = ""
     var price = ""
     var rating = ""
@@ -25,6 +27,6 @@ class BottleEntry {
 
 extension BottleEntry: CustomStringConvertible {
     var description: String {
-        return text.replacingOccurrences(of: "<name>", with: name).replacingOccurrences(of: "<subname>", with: subname).replacingOccurrences(of: "<year>", with: year).replacingOccurrences(of: "<price>", with: price).replacingOccurrences(of: "<rating>", with: rating).replacingOccurrences(of: "<purchaseDate>", with: purchaseDate).replacingOccurrences(of: "<location>", with: location)
+        return text.replacingOccurrences(of: "<name>", with: name).replacingOccurrences(of: "<subname>", with: subname).replacingOccurrences(of: "<country>", with: country).replacingOccurrences(of: "<region>", with: region).replacingOccurrences(of: "<year>", with: year).replacingOccurrences(of: "<price>", with: price).replacingOccurrences(of: "<rating>", with: rating).replacingOccurrences(of: "<purchaseDate>", with: purchaseDate).replacingOccurrences(of: "<location>", with: location)
     }
 }
