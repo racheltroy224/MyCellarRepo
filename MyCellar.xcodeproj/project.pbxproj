@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D6D89702A5F23B800B64979 /* BottleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D896F2A5F23B800B64979 /* BottleViewController.swift */; };
+		8D6D89732A5F2F6A00B64979 /* BottleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D89722A5F2F6A00B64979 /* BottleTableViewController.swift */; };
 		8DB5B5A92A5608320043E54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5A82A5608320043E54F /* AppDelegate.swift */; };
 		8DB5B5AB2A5608320043E54F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5AA2A5608320043E54F /* SceneDelegate.swift */; };
 		8DB5B5AD2A5608320043E54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5AC2A5608320043E54F /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		8D6D896F2A5F23B800B64979 /* BottleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleViewController.swift; sourceTree = "<group>"; };
+		8D6D89722A5F2F6A00B64979 /* BottleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleTableViewController.swift; sourceTree = "<group>"; };
 		8DB5B5A52A5608320043E54F /* MyCellar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCellar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB5B5A82A5608320043E54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DB5B5AA2A5608320043E54F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				8DB5B5AC2A5608320043E54F /* ViewController.swift */,
 				8D6D896F2A5F23B800B64979 /* BottleViewController.swift */,
+				8D6D89722A5F2F6A00B64979 /* BottleTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6D89702A5F23B800B64979 /* BottleViewController.swift in Sources */,
+				8D6D89732A5F2F6A00B64979 /* BottleTableViewController.swift in Sources */,
 				8DB5B5DF2A561A570043E54F /* Bottles.swift in Sources */,
 				8DB5B5DA2A56090C0043E54F /* BottleEntry.swift in Sources */,
 				8DB5B5AD2A5608320043E54F /* ViewController.swift in Sources */,
