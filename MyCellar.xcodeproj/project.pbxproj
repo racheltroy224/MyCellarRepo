@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D6D89702A5F23B800B64979 /* BottleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D896F2A5F23B800B64979 /* BottleViewController.swift */; };
 		8DB5B5A92A5608320043E54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5A82A5608320043E54F /* AppDelegate.swift */; };
 		8DB5B5AB2A5608320043E54F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5AA2A5608320043E54F /* SceneDelegate.swift */; };
 		8DB5B5AD2A5608320043E54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5B5AC2A5608320043E54F /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D6D896F2A5F23B800B64979 /* BottleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleViewController.swift; sourceTree = "<group>"; };
 		8DB5B5A52A5608320043E54F /* MyCellar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCellar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB5B5A82A5608320043E54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DB5B5AA2A5608320043E54F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D6D89712A5F23C600B64979 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5B5AC2A5608320043E54F /* ViewController.swift */,
+				8D6D896F2A5F23B800B64979 /* BottleViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		8DB5B59C2A5608320043E54F = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +114,10 @@
 		8DB5B5A72A5608320043E54F /* MyCellar */ = {
 			isa = PBXGroup;
 			children = (
+				8D6D89712A5F23C600B64979 /* View Controllers */,
 				8DB5B5D82A5608DF0043E54F /* Model */,
 				8DB5B5A82A5608320043E54F /* AppDelegate.swift */,
 				8DB5B5AA2A5608320043E54F /* SceneDelegate.swift */,
-				8DB5B5AC2A5608320043E54F /* ViewController.swift */,
 				8DB5B5AE2A5608320043E54F /* Main.storyboard */,
 				8DB5B5B12A5608330043E54F /* Assets.xcassets */,
 				8DB5B5B32A5608330043E54F /* LaunchScreen.storyboard */,
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6D89702A5F23B800B64979 /* BottleViewController.swift in Sources */,
 				8DB5B5DF2A561A570043E54F /* Bottles.swift in Sources */,
 				8DB5B5DA2A56090C0043E54F /* BottleEntry.swift in Sources */,
 				8DB5B5AD2A5608320043E54F /* ViewController.swift in Sources */,
