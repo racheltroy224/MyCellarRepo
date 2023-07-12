@@ -23,7 +23,16 @@ class ViewController: UIViewController {
     
     @IBAction func generateWineDescription(_ sender: UIButton) {
         updateBottle()
-        print(bottle)
+        
+        if bottle.isValid() {
+            performSegue(withIdentifier: "Bottle", sender: nil)
+        } else {
+            let alert = UIAlertController(title: "Invalid Story Prompt", message: "Please fill out all of the fields", preferredStyle: .alert)
+                  let action = UIAlertAction(title: "OK", style: .default, handler: { action in })
+                  alert.addAction(action)
+                  present(alert, animated:  true)
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -41,6 +50,15 @@ class ViewController: UIViewController {
         bottle.rating = ratingTextField.text ?? ""
         bottle.purchaseDate = purchaseDateTextField.text ?? ""
         bottle.location = locationTextField.text ?? ""
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Bottle" {
+            guard let BottleViewController = segue.destination as? BottleViewController else {
+                return
+            }
+            BottleViewController.bottle = bottle
+        }
     }
 
 

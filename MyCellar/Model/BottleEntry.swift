@@ -23,6 +23,10 @@ class BottleEntry {
     init(){
         text = Bottles.label()
     }
+    
+    func isValid() -> Bool {
+        return !(name.isEmpty && year.isEmpty && location.isEmpty)
+    }
 }
 
 extension BottleEntry: CustomStringConvertible {

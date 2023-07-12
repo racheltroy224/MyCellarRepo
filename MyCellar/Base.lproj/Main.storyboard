@@ -185,7 +185,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Generate Wine Description"/>
                                         <connections>
-                                            <action selector="generateWineDescription:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAG-Zm-kto"/>
+                                            <action selector="generateWineDescription:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XWa-aA-J2w"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -210,6 +210,7 @@
                         <outlet property="regionTextField" destination="wU2-f6-Tlb" id="MQk-WE-aKn"/>
                         <outlet property="subnameTextField" destination="iDj-Ij-D64" id="7Ka-1M-sUA"/>
                         <outlet property="yearTextField" destination="iSy-AS-SfB" id="nHg-kT-ZQj"/>
+                        <segue destination="Nax-9y-cb8" kind="show" identifier="Bottle" id="T5T-Ix-6a3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -236,6 +237,7 @@
                         <viewLayoutGuide key="safeArea" id="PYL-dJ-2FS"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dIC-jm-JKO"/>
                     <connections>
                         <outlet property="bottleEntryTextView" destination="dg5-jU-vkE" id="W0M-Vm-0Pr"/>
                     </connections>
