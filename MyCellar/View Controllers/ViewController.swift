@@ -62,6 +62,15 @@ class ViewController: UIViewController {
         }
     }
 
+}
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        updateBottle()
+        
+        //indicates that we want the text field to use its default behavior
+        return true
+    }
 }
 
