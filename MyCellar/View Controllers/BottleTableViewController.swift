@@ -14,6 +14,7 @@ class BottleTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /*
         let bottle1 = BottleEntry()
         let bottle2 = BottleEntry()
         let bottle3 = BottleEntry()
@@ -49,6 +50,7 @@ class BottleTableViewController: UITableViewController {
         bottle3.location = "AA3"
 
         bottles = [bottle1, bottle2, bottle3]
+         */
     }
 
     // MARK: - Table view data source
@@ -85,5 +87,18 @@ class BottleTableViewController: UITableViewController {
           bottleViewController.bottle = bottle
         }
       }
+    
+    @IBAction func saveBottle(unwindSegue: UIStoryboardSegue) {
+        guard let bottleViewController = unwindSegue.source as? BottleViewController,
+              let bottle = bottleViewController.bottle else {
+            return
+        }
+        bottles.append(bottle)
+        tableView.reloadData()
+    }
+    
+    @IBAction func cancelBottle(unwindSegue: UIStoryboardSegue) {
+        //leave empty since it is a cancel action
+    }
 
 }

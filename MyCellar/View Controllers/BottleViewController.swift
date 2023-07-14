@@ -28,5 +28,8 @@ class BottleViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-
+    @IBAction func cancelBottle(_ sender: Any) {
+        performSegue(withIdentifier: "CancelBottle", sender: nil)
+    }
+    
 }
