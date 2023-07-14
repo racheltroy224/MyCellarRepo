@@ -12,24 +12,29 @@ class BottleViewController: UIViewController {
     @IBOutlet weak var bottleEntryTextView: UITextView!
     
     var bottle: BottleEntry?
+    var isNewBottle = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         bottleEntryTextView.text = bottle?.description
+        
+        if isNewBottle {
+            let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveBottle))
+            let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelBottle))
+            navigationItem.rightBarButtonItem = saveButton
+            navigationItem.leftBarButtonItem = cancelButton
+        }
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
-    @IBAction func cancelBottle(_ sender: Any) {
+    @objc func cancelBottle() {
         performSegue(withIdentifier: "CancelBottle", sender: nil)
+    }
+    
+    @objc func saveBottle() {
+        performSegue(withIdentifier: "SaveBottle", sender: nil)
     }
     
 }

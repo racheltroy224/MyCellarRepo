@@ -58,6 +58,7 @@ class ViewController: UIViewController {
                 return
             }
             BottleViewController.bottle = bottle
+            BottleViewController.isNewBottle = true
         }
     }
 
